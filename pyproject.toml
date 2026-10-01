@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pptx-translator"
+version = "1.0.0"
+description = "OOXML-preserving PowerPoint (.pptx) translation extract/patch tool."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "pptx_translator" }]
+dependencies = ["lxml>=4.9"]
+
+[project.optional-dependencies]
+test = ["python-pptx>=0.6.21"]
+
+[project.scripts]
+pptx-translator = "pptx_translator.cli:main"
+
+[tool.setuptools]
+packages = ["pptx_translator"]

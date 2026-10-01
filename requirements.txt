@@ -1,0 +1,4 @@
+lxml>=4.9
+# python-pptx is only needed to run the test suite (tests/). The extract and
+# patch commands do NOT use it.
+python-pptx>=0.6.21
